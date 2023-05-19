@@ -1,0 +1,29 @@
+<div class="selected-book rounded" *ngIf="selected">
+  <app-receta-detail [recetaDetail]="selectedReceta"></app-receta-detail>
+</div>
+
+<p>**La calificacion promedio de estas recetas es {{promedio}} con un registro de {{opiniones}} opiniones**</p>
+
+
+<div class="container-fluid">
+  <div class="col-10 offset-1">
+    <div class="row">
+      <div *ngFor="let receta of recetas"
+            class="col mb-2">
+            <div class="card p-2 vaina" style="height: 33rem">
+              <img class="card-img" src="{{ receta.imagen }}" alt="{{ receta.nombre }}" />
+              <div class="card-body">
+                <h5 class="card-title">{{ receta.nombre }}</h5>
+                <p class="card-text"> estrellas {{ receta.estrellas }} duracion {{ receta.duracion }} dificultad {{ receta.dificultad }}</p>
+                <button class="color" (click)="onSelected(receta)">Go somewhere</button>
+              </div>
+            </div>
+          </div>
+      </div>
+</div>
+
+
+
+
+
+</div>

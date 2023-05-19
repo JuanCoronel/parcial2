@@ -1,0 +1,15 @@
+
+.banner{
+  background-color:  #120E2F;
+  height: 200px;
+  margin-bottom: 25px;
+
+}
+
+.cetered{
+  align-items: center;
+  vertical-align:   center;
+  width: 200px;
+  height: 200px;
+  margin-left: 600px;
+}
